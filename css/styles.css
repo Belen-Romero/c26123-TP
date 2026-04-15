@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background: #6e5a8e;
+  color: #fff7fb;
+}
+
+main {
+  width: 80%;
+}
+
+/* Estaba bien, pero por querer poner 50px le habia puesto 50rem!! 🤣 */
+.footer-list img {
+  width: 5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+.card {
+  background-color: #8a79a8;
+  color: #2a1e35;
+  width: 40rem;
+
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
