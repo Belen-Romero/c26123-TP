@@ -13,15 +13,93 @@ body {
   font-size: 1.6rem;
   background: #6e5a8e;
   color: #fff7fb;
+
+  /* Lo nuevo */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 main {
   width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+
+  /* Propiedad "flex" agrupa las 3 cosas: grow, shrink y basis */
+  /* equivale a: flex: 1 1 0
+  Puede crecer, puede achicarse, arranca sin tamaño base (0) */
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Estaba bien, pero por querer poner 50px le habia puesto 50rem!! 🤣 */
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  color: #fff7fb;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+header,
+footer {
+  background: #5c4a7a;
+  color: #fff7fb;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-logo {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.logo,
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: inherit;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+
+  /* Hago que los li se acomoden en fila con una distancia entre ellos de 2rem */
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-list li {
+  padding: 1rem;
+}
+
 .footer-list img {
   width: 5rem;
+  padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- */
