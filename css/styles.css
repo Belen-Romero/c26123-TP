@@ -103,8 +103,47 @@ footer .footer-list {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                   COLORES                                  */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  background-color: #6e5a8e;
+}
+
+.bg-secondary {
+  background-color: #f2c66d;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #2a1e35;
+}
+
+.text-secondary {
+  color: #f2c66d;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                    HOME                                    */
 /* -------------------------------------------------------------------------- */
+
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.contenedor-tarjetas {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .card {
   background-color: #8a79a8;
   color: #2a1e35;
@@ -112,8 +151,47 @@ footer .footer-list {
 
   border-radius: 1rem;
   overflow: hidden;
+
+  /* Nuevo: */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding-bottom: 2rem;
 }
 
 .card img {
   width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+.titulo-contacto {
+  margin: 2rem 0;
+}
+
+.form-contacto {
+  background-color: #8a79a8;
+  color: #2a1e35;
+  width: 100%;
+  max-width: 50rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* sutil */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
 }
